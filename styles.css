@@ -1,0 +1,88 @@
+body {
+    font-family: 'Menlo';
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */ /* Remova essa linha */
+    margin: 0;
+}
+
+#terminal {
+    background-color: #000;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    max-width: 800px;
+    margin: 50px auto;
+    border: 2px solid #0f0;
+    border-radius: 5px;
+    overflow-y: auto; /* Adicione essa linha */
+}
+
+#ascii-logo {
+    color: yellow;
+}
+
+#welcome-message {
+    color: purple;
+    margin-top: 10px;
+}
+
+
+#command-line {
+    display: flex;
+    align-items: center;
+   
+}
+
+#cursor {
+    width: 10px;
+    height: 20px;
+    background-color: #0F0;
+    animation: blink 1s infinite;
+}
+
+#input {
+    background-color: #000;
+    border: none;
+    color: #0f0;
+    outline: none;
+    flex-grow: 1;
+    line-height: 1.5;
+}
+
+#input:focus {
+    caret-color: #0F0; /* Define a cor do cursor */
+}
+
+#input::placeholder {
+    color: transparent;
+}
+
+#input:focus::placeholder {
+    color: rgba(255, 255, 255, 0.5); /* Cor do placeholder quando o input está em foco */
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#prompt {
+    margin-right: 5px;
+}
+
+#output {
+    word-wrap: break-word;
+    white-space: pre-line;  /* Isso permite que as quebras de linha sejam respeitadas */
+    overflow-wrap: break-word;
+    max-width: 100%;  /* Isso garante que o contêiner não ultrapasse a largura da tela */
+    color: #0F0;
+}
+
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
