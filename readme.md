@@ -2,7 +2,7 @@
 
 Bem-vindo ao **Simulador de Terminal v.3.0.1**, sua experiência virtual de terminal com diversas funcionalidades interessantes.
 
-![ASCII Art Logo](/terminal/terminal.png)
+![ASCII Art Logo](terminal.png)
 
 ## Descrição
 
